@@ -45,7 +45,7 @@ class ListaEnlazada:
         if actual is None:
             raise ReferenceError
         
-        if anterior is None
+        if anterior is None:
             self.head = actual.ptrNext
         else:
             anterior.ptrNext = actual.ptrNext
