@@ -4,29 +4,29 @@ Estructura inicial de una lista enlazada
 20/06/23
 """
 
-from node import Node
+from nodo import Nodo
 
 class ListaEnlazada:
     def __init__(self):
         self.head = None
     
     def insertar(self, x):
-        nodo = Node(x)
+        nodo = Nodo(x)
         actual = self.head
 
         if actual is None:
             self.head = nodo
         else:
-            while actual.ptrNext is not None:
-                actual = actual.ptrNext
+            while actual.siguiente is not None:
+                actual = actual.siguiente
 
-            actual.ptrNext = nodo
+            actual.siguiente = nodo
 
     def traerIndice(self, i):
         cnt = 0
         actual = self.head
         while cnt < i and actual is not None:
-            actual = actual.ptrNext
+            actual = actual.siguiente
             cnt += 1
         
         if actual is None:
@@ -40,12 +40,18 @@ class ListaEnlazada:
 
         while actual is not None and actual.value != v:
             anterior = actual
-            actual = actual.ptrNext
+            actual = actual.siguiente
         
         if actual is None:
             raise ReferenceError
         
         if anterior is None:
-            self.head = actual.ptrNext
+            self.head = actual.siguiente
         else:
-            anterior.ptrNext = actual.ptrNext
+            anterior.siguiente = actual.siguiente
+    
+    def verificarVacio(self):
+        if self.head is None:
+            return True
+        else:
+            return False

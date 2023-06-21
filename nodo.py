@@ -4,7 +4,8 @@ Clase nodo
 20/06/23
 """
 
-class Node:
-    def __init__(self, value):
-        self.value = value
-        self.ptrNext = None
+class Nodo:
+    def __init__(self, dato):
+        self.dato = dato
+        self.siguiente = None
+
