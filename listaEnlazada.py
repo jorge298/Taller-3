@@ -32,13 +32,13 @@ class ListaEnlazada:
         if actual is None:
             raise OverflowError
         
-        return actual.value
+        return actual.dato
     
     def borrar(self, v):
         actual = self.head
         anterior = None
 
-        while actual is not None and actual.value != v:
+        while actual is not None and actual.dato != v:
             anterior = actual
             actual = actual.siguiente
         
