@@ -43,7 +43,7 @@ def combinar (L1, L2):
 # Definir las listas
 # Lista 1: 1 -> 3 -> 5 -> 7
 
-L1 = None
+L1 = len(None)
 len.insertar(L1, 1)
 len.insertar(L1, 3)
 len.insertar(L1, 5)
@@ -52,7 +52,7 @@ len.insertar(L1, 9)
 
 
 # Lista 2: 2 -> 4 -> 6 -> 8
-L2 = None
+L2 = len(None)
 len.insertar(L2, 2)
 len.insertar(L2, 4)
 len.insertar(L2, 6)
@@ -62,8 +62,13 @@ len.insertar(L2, 8)
 # Llamar a la función combinar
 L3 = combinar(L1, L2)
 
+#mostrar el primer indice de L3
+print(len.traerIndice(L3,1))
+
 # Imprimir la lista combinada
+"""
 while not(len.verificarVacio(L3)):
     print(len.traerIndice(L3), end=" -> ")
     len.borrar(L3,len.traerIndice(L3))
 print("None")
+"""

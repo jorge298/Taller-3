@@ -7,14 +7,14 @@ Estructura inicial de una lista enlazada
 from nodo import Nodo
 
 class ListaEnlazada:
-    def __init__(self):
+    def __init__(self, head):
         self.head = None
     
     def insertar(self, x):
         nodo = Nodo(x)
-        actual = self.head
+        actual = self.head # <--error de nonetype
 
-        if actual is None:
+        if actual is None: #anteriormente era: if actual is None
             self.head = nodo
         else:
             while actual.siguiente is not None:
