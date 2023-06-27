@@ -1,7 +1,10 @@
 """
-Grupo de trabajo:
 Punto 1
 20/06/23
+
+Desarrolle la operación combinar(Lista L1, Lista L2) que recibe dos listas simplemente enlazadas,
+cada una ordenada ascendentemente, y devuelve una lista L3 que tiene los elementos ordenados de ambas
+listas. Las listas pueden tener elementos repetidos.
 """
 from listaEnlazada import ListaEnlazada as len
 #from nodo import Nodo
