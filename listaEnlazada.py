@@ -7,7 +7,7 @@ Estructura inicial de una lista enlazada
 from nodo import Nodo
 
 class ListaEnlazada:
-    def __init__(self, head):
+    def __init__(self):
         self.head = None
     
     def insertar(self, x):
@@ -55,3 +55,9 @@ class ListaEnlazada:
             return True
         else:
             return False
+        
+    def recorrido(self):
+        aux = self.head
+        while aux != None:
+            print(aux.dato)
+            aux = aux.siguiente
