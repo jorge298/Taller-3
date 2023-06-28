@@ -1,5 +1,5 @@
 """
-Estructura inicial 
+Estructura inicial para las funciones tipo obra del punto 2
 27/06/23
 """
 
@@ -58,7 +58,7 @@ class ObraEnlazada:
         actual = self.head
         print("Nombre de la obra | cantidad de replicas")
         while actual is not None:
-            print(actual.nombre + " | " + actual.cantidad)
+            print(actual.nombre + " | " + str(actual.cantidad))
             actual = actual.siguiente
     
     def verificarListaVacia(self):

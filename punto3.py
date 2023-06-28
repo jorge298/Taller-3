@@ -1,5 +1,5 @@
 """
-Punto 2
+Punto 3
 26/06/23
 
 Utilizando la estructura Cola, desarrolle las siguientes operaciones básicas de una Pila:
