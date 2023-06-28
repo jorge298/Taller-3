@@ -1,5 +1,4 @@
 """
-grupo de estudio:
 Estructura inicial de una lista enlazada
 20/06/23
 """
