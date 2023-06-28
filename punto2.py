@@ -63,6 +63,9 @@ agregarReplica(inv2, "El hijo del hombre")
 venderReplica(inv2, "La gran ola de Kanagawa")
 venderReplica(inv2, "La gran ola de Kanagawa")
 listarReplicas(inv2)
+agregarReplica(inv2, "La noche estrellada")
+agregarReplica(inv2, "La noche estrellada")
+listarReplicas(inv2)
 print("______________________________________________")
 
 #ejemplo 3
