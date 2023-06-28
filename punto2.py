@@ -9,3 +9,14 @@ atributos nombre y cantidad.
 >Desarrolle la operación venderReplica(String nombre)
 >Desarrolle la operación ListarReplicas()
 """
+
+from obraEnlazada import ObraEnlazada as oben
+
+def agregarReplica(lista, nombre):
+    #verificar si la lista está vacía
+    if oben.verificarListaVacia(lista)is not True:
+        oben.insertar()
+
+#def venderReplica(lista, nombre):
+
+#def ListarReplicas(lista):

@@ -1,5 +1,4 @@
 """"
-Grupo de trabajo:
 Clase nodo
 20/06/23
 """
